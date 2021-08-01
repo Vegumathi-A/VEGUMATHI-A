@@ -1,0 +1,22 @@
+val a[apiBaseUrl]="https://vegumathi.free.beeceptor.com/my/api/path";
+function getusers(){
+const endpoint="/my/api/path"
+axios.get(`${apiBaseUrl}${endpoint}`).then(response=>{
+const users=response.data.data;
+console.log(users);
+});
+}
+var a[id];
+<p id="demo"></p>
+function addUser((id)){
+ const endpoint="/user";
+axios.post(`${apiBaseUrl}${endpoint}`,{
+firstname='wick',
+lastname='stolen',
+})
+const obj=JSON.parse(endpoint);
+document.getElementById("id").innerHTML=obj.name+", "+obj.detail;
+.then(function(response){
+console.log(response);
+
+})
